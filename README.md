@@ -1,12 +1,24 @@
-# web_dev
-playground for static websites
+# 11ty test repo
 
-## node.js for debian
+## setup
 
-https://github.com/nodesource/distributions
+### 1. node.js
 
-    curl -fsSL https://deb.nodesource.com/setup_20.x | bash - &&apt-get install -y nodejs
+meer informatie voor installeren vind je hier: https://github.com/nodesource/distributions
+
+installeer nu de lts versie met:
+
+    curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &&apt-get install -y nodejs
  
+### 2. Github
+
+Maak een repo voor je project en clone de inhoud naar je locale mappenstructuur.
+
+### 3. installeer 11ty in project
+
+In de terminal:
+
+
 ## 11ty
 
 maak index

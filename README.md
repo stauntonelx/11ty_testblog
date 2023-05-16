@@ -1,6 +1,6 @@
 # 11ty test repo
 
-## setup
+## setup project
 
 ### 1. node.js
 
@@ -16,8 +16,42 @@ Maak een repo voor je project en clone de inhoud naar je locale mappenstructuur.
 
 ### 3. installeer 11ty in project
 
-In de terminal:
+Open de terminal in de git repo die je net gecloned hebt.
 
+    npm init -y
+    npm install @11ty/eleventy --save-dev
+
+### 4 package.json
+
+Pas het script aan met volgende regels
+
+    "scripts": {
+      "start": "eleventy --serve",
+      "build": "eleventy"
+    },
+
+Je start nu de website met:
+
+    npm start
+
+En build de website met
+
+    npm build
+
+### 5 configbestand
+
+maak een congigbestand aan eleventy.config.js
+
+    module.exports = function(eleventyConfig) {
+    return {
+        dir: {
+        input: "src",
+        output: "public"
+        }
+    }
+    };
+
+De source gaat in ./src, de output komt in de public map.
 
 ## 11ty
 
@@ -27,10 +61,10 @@ maak index
 
 run eleventy
 
-    npx @11ty/eleventy
+    npm build
 
 run webserver
 
-    npx @11ty/eleventy --serve
+    npm start
 
 Open http://localhost:8080/ in je webbrowser

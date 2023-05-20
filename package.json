@@ -1,15 +1,19 @@
 {
   "name": "11ty_testblog",
   "version": "1.0.0",
-  "description": "## setup",
+  "description": "Ontwikkelen nieuwe stauntonel blog in eleventy",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stauntonelx/11ty_testblog.git"
+  },
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Stauntonel",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   }

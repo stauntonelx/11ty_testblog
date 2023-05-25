@@ -1,7 +1,8 @@
 ---
 title: Markdown Cheat sheet
-layout: base.njk
+layout: base.html
 ---
+
 # {{ title }}
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 

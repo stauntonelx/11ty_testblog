@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>{{ title }} | Stauntonel Blog</title>
+  	<title>{{ title or metadata.title }}</title>
   	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
   	<meta name="description" content="verzameling van korte aantekeningen meestal linux gerelateerd" />
     <meta name="keywords" content="{{ tags }}" />
@@ -17,7 +17,7 @@
   <header>
     <div class="headergrid">
     <div class="logo">
-      <a href="/"><h1>Stauntonel Blog</h1></a>
+      <a href="/"><h1>{{metadata.title}}</h1></a>
     </div>
 
     <nav>
@@ -32,6 +32,8 @@
   </header>
 
   <main>
+    <h1>{{ title or metadata.tittle}}</h1>
+    {{ description }}
     {{ content | safe }}
   </main>
 

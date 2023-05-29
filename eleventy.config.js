@@ -1,10 +1,10 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy({"./src/_passthrough/": "/"});
   return {
     dir: {
       input: 'src',
       includes: '_includes',
-      output: '_site',
+      output: 'public',
     },
     templateFormats: ['md', 'html'],
     markdownTemplateEngine: 'liquid',
@@ -12,3 +12,4 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: 'njk',
   };
 }
+

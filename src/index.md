@@ -11,4 +11,4 @@ description: Deze website is ontstaan als persoonlijk naslagwerk over allerlei m
 ```
 sudo apt remove sudo
 ```
-![alt text](img/iconmonstr-home-9.svg)
+![alt text](img/header_small.svg)

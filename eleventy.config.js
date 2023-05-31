@@ -1,5 +1,7 @@
+const pluginNavigation = require("@11ty/eleventy-navigation");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"./src/_passthrough/": "/"});
+  eleventyConfig.addPlugin(pluginNavigation);  
   return {
     dir: {
       input: 'src',

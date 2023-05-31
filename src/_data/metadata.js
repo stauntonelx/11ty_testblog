@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Stauntonel blog meta",
+	title: "Stauntonel blog",
 	url: "https://stauntonel.nl",
 	language: "nl",
 	description: "Aantekeningen van een Linux liefhebber",

@@ -6,6 +6,5 @@ eleventyNavigation:
 title: Archief
 description: "opsomming van alle posts op deze website:"
 ---
-{{ title }}
 
-{{ description }}
+![linux pinguin img](/img/inbox-21.svg)

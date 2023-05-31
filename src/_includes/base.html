@@ -12,34 +12,25 @@
   </head>
 
   <body>
-    <script>0</script>
-
   <header>
-    <div class="headergrid">
-    <div class="logo">
-      <a href="/"><h1>{{metadata.title}}</h1></a>
-    </div>
-
+    <a href="/"><h1>{{ title or metadata.title}}</h1></a>
     <nav>
-      <ul class="inline">
-        <li><a href="/categories/">Categorie</a></li>
-        <li><a href="/tags/">Tags</a></li>
-        <li><a href="/notes/">Notitie</a></li>
-        <li><a href="/posts/">Archief</a></li>
+      <h2 class="visually-hidden">Top level navigation menu</h2>
+      <ul class="nav">
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+      {%- endfor %}
       </ul>
     </nav>
-    </div>
   </header>
 
   <main>
-    <h1>{{ title or metadata.tittle}}</h1>
     {{ description }}
     {{ content | safe }}
   </main>
 
   <footer>
-    © Stauntonel 2022 | <a href="https://gohugo.io/documentation">HUGO</a> | <a href="https://github.com/yihui/hugo-xmin">XMIN</a>
+    © Stauntonel 2023 | <a href="https://gohugo.io/documentation">HUGO</a> | <a href="https://github.com/yihui/hugo-xmin">XMIN</a>
   </footer>
-
   </body>
 </html>

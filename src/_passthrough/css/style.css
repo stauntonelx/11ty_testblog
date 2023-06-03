@@ -1,0 +1,26 @@
+body {
+	margin: 1rem;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 120px 1fr	
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+nav ul {
+  padding: 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+  padding-left: 10px;
+  border-color: hsla(0, 0%, 0%, 0.1);
+}

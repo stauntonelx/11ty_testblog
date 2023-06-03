@@ -1,6 +1,7 @@
 ---
-title: Markdown Cheat sheet
-layout: base.html
+title: Markdown
+date: 2023-06-01
+keys: markdown, syntax
 ---
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!

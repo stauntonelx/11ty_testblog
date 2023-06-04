@@ -211,4 +211,4 @@ genfstab -Up /mnt/debinst >> /mnt/debinst/etc/fstab
 
 Installeer een [bootloader](/tags/bootloader) naar keuze.
 
-[Meer distro installeren](/categories/distro)
+[Terug naar blog](/blog)

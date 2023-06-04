@@ -1,0 +1,16 @@
+---
+layout: base.html
+eleventyNavigation:
+  key: Notities
+  order: 2
+title: Notities
+description: "Notities / todo list voor nieuwe projecten"
+---
+
+<ul>
+    {%- for post in collections.note | reverse -%}
+      <li> {{ post.data.date | postDate }} - <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+</ul>
+
+<a href="/notes"><img src="/img/task-list-square-lined.svg" alt="[notities]"></a>

@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {
         zone: "Europe/Amsterdam",
     }).setLocale('en').toISODate();
-});
+  });
   return {
     dir: {
       input: 'src',

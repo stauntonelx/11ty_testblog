@@ -8,4 +8,4 @@ description: Deze website is ontstaan als persoonlijk naslagwerk over allerlei m
 sudo apt remove sudo
 ```
 
-![linux pinguin img](/img/linux-os-1.svg)
+![linux pinguin img](/img/linux-os-1_w100.svg)

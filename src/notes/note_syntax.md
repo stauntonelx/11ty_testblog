@@ -5,7 +5,7 @@ keys: markdown, syntax
 description: Markdown naslag werk voor gebruik met Hugo en 11ty
 ---
 
-Het volledige naslagwerk vin je hier: [The Markdown Guide](https://www.markdownguide.org)!
+Het volledige naslagwerk vind je hier: [The Markdown Guide](https://www.markdownguide.org)!
 
 ## Basic Syntax
 

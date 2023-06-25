@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
       output: 'public',
     },
     templateFormats: ['md', 'html'],
-    markdownTemplateEngine: 'liquid',
+    markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
   };

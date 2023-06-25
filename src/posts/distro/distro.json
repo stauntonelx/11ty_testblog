@@ -1,0 +1,6 @@
+{
+    "layout": "base.html",
+    "tags": ["post"],
+    "categorie": ["distro"],
+    "permalink": "/blog/distro/{{ title | slugify }}.html"
+}

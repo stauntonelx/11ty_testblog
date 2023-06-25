@@ -91,7 +91,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Heading ID
 
-### My Great Heading {#custom-id}
+### My Great Heading
 
 ### Definition List
 

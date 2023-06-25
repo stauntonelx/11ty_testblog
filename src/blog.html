@@ -9,7 +9,7 @@ description: alle posts in volgorde van datum
 
 <ul>
     {%- for post in collections.post | reverse -%}
-      <li> {{ post.data.date | postDate }} - <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      <li> {{ post.data.date | postDate }} - <a href="{{ post.url }}">{{ post.data.title | slugify }}</a></li>
     {%- endfor -%}
 </ul>
 

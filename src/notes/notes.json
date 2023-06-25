@@ -1,5 +1,5 @@
 {
-    "layout": "base.html",
+    "layout": "note.html",
     "tags": ["note"],
     "permalink": "/notes/{{ title | slugify }}.html"
 }

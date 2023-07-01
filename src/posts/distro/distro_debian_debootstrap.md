@@ -31,10 +31,10 @@ pacman -S binutils debootstrap arch-install-scripts
 ## 03 Installeer debian
 
 ```
-/usr/sbin/debootstrap --variant=minbase --components=main,contrib,non-free \
+/usr/sbin/debootstrap --variant=minbase --components=main,contrib,non-free,non-free-firmware \
 --include=nano,dialog,bash-completion,tmux,locales,console-setup,tasksel,\
-,dosfstools,btrfs-progs,links,network-manager,sudo \
---arch amd64 bullseye /mnt/debinst http://ftp.nl.debian.org/debian/
+,dosfstools,btrfs-progs,links,network-manager,sudo,git,tree,cryptsetup,cryptsetup-initramfs \
+--arch amd64 bookworm /mnt/debinst http://ftp.nl.debian.org/debian/
 ```
 
 ### Chroot
@@ -102,9 +102,9 @@ nano /etc/apt/sources.list
 Zorg dat deze er als volg uitziet:
 
 ```
-deb http://ftp.nl.debian.org/debian bullseye main contrib non-free
-deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
-deb http://deb.debian.org/debian-security bullseye-security main contrib non-free
+deb http://ftp.nl.debian.org/debian bookworm main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+deb http://deb.debian.org/debian-security bookworm-security main contrib non-free
 ```
 
 Daarna

@@ -33,7 +33,7 @@ pacman -S binutils debootstrap arch-install-scripts
 ```
 /usr/sbin/debootstrap --variant=minbase --components=main,contrib,non-free,non-free-firmware \
 --include=nano,dialog,bash-completion,tmux,locales,console-setup,tasksel,\
-,dosfstools,btrfs-progs,links,network-manager,sudo,git,tree,cryptsetup,cryptsetup-initramfs \
+dosfstools,btrfs-progs,links,network-manager,sudo,git,tree,cryptsetup,cryptsetup-initramfs \
 --arch amd64 bookworm /mnt/debinst http://ftp.nl.debian.org/debian/
 ```
 
@@ -46,29 +46,20 @@ source /etc/profile
 source /etc/skel/.bashrc
 ```
 
-### symlinks
-
-```
-cd /media
-mkdir cdrom0
-ln -s cdrom0 cdrom
-cd /
-ln -s media/cdrom
-```
-
 ### Tijd
 
 ```
 nano /etc/adjtime
 ```
 
-bijvoorbeeld:
+geef dit bestand de volgende inhoud:
 
 ```
 0.0 0 0.0
 0
 UTC
 ```
+
 dan:
 
 ```
@@ -122,7 +113,7 @@ tasksel install standard laptop
 ### firmware
 
 ```
-apt install -y firmware-linux-nonfree firmware-realtek firmware-iwlwifi rfkill
+apt install -y firmware-linux-nonfree firmware-realtek firmware-iwlwifi bluez-firmware rfkill
 ```
 
 ### kernel
@@ -152,8 +143,7 @@ opruimen cache (optioneel)
 apt clean
 ```
 
-Om de een of andere reden is de initramfs soms corrupt.
-Dan moet je die opnieuw opbouwen met:
+Om de een of andere reden is de initramfs soms corrupt. Dan moet je die opnieuw opbouwen met:
 
 ```
 update-initramfs -u -k all
@@ -165,7 +155,7 @@ update-initramfs -u -k all
 
 ```
 apt install -y --no-install-recommends \
-task-xfce-desktop xfce4-terminal mousepad xfce4-power-manager-plugins xfce4-whiskermenu-plugin gnome-themes-extra papirus-icon-theme xfce4-notifyd gvfs gvfs-backends gvfs-fuse thunar-archive-plugin thunar-volman
+task-xfce-desktop xfce4-terminal mousepad xfce4-power-manager-plugins xfce4-whiskermenu-plugin gnome-themes-extra papirus-icon-theme xfce4-notifyd gvfs gvfs-backends gvfs-fuse thunar-archive-plugin thunar-volman mugshot policykit-1-gnome light-locker menulibre dbus-x11 plymouth plymouth-themes network-manager-gnome pavucontrol gnome-keyring blueman
 ```
 
 firefox met alle recommends:
@@ -184,13 +174,13 @@ apt install -y build-essential libx11-dev libxft-dev libxext-dev libxinerama-dev
 
 ```
 apt install -y --no-install-recommends \
-mpd mpc ncmpcpp beets pulseaudio alsa-utils shotwell
+mpd mpc ncmpcpp beets pulseaudio pulseaudio-module-bluetooth
 ```
 
 en met alle recommends
 
 ```
-apt install -y gnome-mpv ffmpeg-doc libdvdcss2
+apt install -y parole lollypop shotwell
 ```
 
 ### fstab in orde maken

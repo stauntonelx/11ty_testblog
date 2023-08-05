@@ -18,7 +18,6 @@ Maak een repo voor je project en clone de inhoud naar je locale mappenstructuur.
 
 Open de terminal in de git repo die je net gecloned hebt.
 
-    npm init -y
     npm install @11ty/eleventy --save-dev
 
 ### 4 package.json
